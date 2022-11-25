@@ -1,0 +1,437 @@
+* {
+  font-family: "Tiro Gurmukhi", serif;
+  font-size: 25px;
+  box-sizing: border-box;
+}
+button {
+  cursor: pointer;
+  box-shadow: 5px 3px rgba(0, 0, 0, 0.39);
+  border: none;
+}
+button:active {
+  margin-top: 2px;
+  margin-left: 2px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  color: #cfcfcf;
+}
+button:hover {
+  filter: brightness(0.9);
+}
+:root {
+  --color-rectangle-itens: #cb9b3e;
+}
+.espaco2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* tela 1 espaço 2 */
+.tela1espaco2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.codigoepesquisa {
+  width: 90%;
+  height: 20%;
+  margin: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.codigo {
+  padding: 0%;
+  height: 100%;
+  width: 40%;
+  /* border: solid 2px white; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.codigo2 {
+  padding: 0%;
+  height: 100%;
+  width: 40%;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.agrupacodigos {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.button {
+  width: 30%;
+  height: 50%;
+  color: white;
+}
+.search {
+  width: 50px;
+  height: 50px;
+
+  /* margin-top: 16%; */
+  margin-left: 5%;
+  gap: 5%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: white;
+  border-radius: 10px;
+  color: white;
+  background-color: #6e9f4f;
+}
+.agrupacodigos2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.button2 {
+  width: 30%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.search2 {
+  width: 20%;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: white;
+  border-radius: 10px;
+  color: white;
+  background-color: #6e9f4f;
+}
+.search2:active {
+  background-color: #52773b;
+  margin-top: 1%;
+  margin-left: 1%;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  color: #cfcfcf;
+}
+#search3:active {
+  background-color: #94712c;
+  margin-top: 1%;
+  margin-left: 1%;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  color: #cfcfcf;
+}
+.button2 {
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+#search3 {
+  height: 50px;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1%;
+
+  border: white;
+  border-radius: 10px;
+  color: white;
+  background-color: #cb9b3e;
+}
+
+.input {
+  /* border: #D9D9D9 solid 2px; */
+  height: 50px;
+  width: 100%;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+.input2 {
+  /* border: #D9D9D9 solid 2px; */
+  height: 50px;
+  width: 100%;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+.pi {
+  /* border: #D9D9D9 solid 2px; */
+  margin: 0%;
+  font-family: "Tiro Gurmukhi", serif;
+  font-size: 18px;
+  color: white;
+}
+.p2 {
+  margin: 0%;
+  margin-left: 5%;
+  font-family: "Tiro Gurmukhi", serif;
+  font-size: 20px;
+  color: #282828;
+}
+
+.informacoes {
+  margin: 0% 5%;
+  height: 75%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.tela3 {
+  width: 100%;
+  height: 95%;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+/* informações */
+
+.descricao2 {
+  display: flex;
+  justify-content: space-between;
+  height: 70%;
+  width: 100%;
+}
+
+.descricao {
+  width: 100%;
+  height: 90%;
+
+  display: flex;
+  flex-direction: column;
+  margin: 3%;
+}
+.produto {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-left: 3%;
+}
+.resto {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+  margin-left: 3%;
+}
+.resto2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+  margin-left: 3%;
+}
+.tamanho {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.cor {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.sexo {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.segmento {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.retangulos {
+  background-color: #282828;
+  width: 90%;
+  height: 33%;
+  border-radius: 5px;
+  color: white;
+}
+.inputretangulop {
+  background-color: #282828;
+  width: 95%;
+  height: 66%;
+  border-radius: 5px;
+  color: white;
+}
+
+.preco {
+  width: 95%;
+  height: 20%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.inputvalor {
+  width: 40%;
+  height: 50%;
+  background-color: #282828;
+  border-radius: 10px;
+  color: white;
+}
+
+/* tela 2 espaço 2 */
+
+.grupovendas {
+  box-sizing: border-box;
+
+  height: 100vh;
+  width: 30%;
+  background-color: #d9d9d9;
+}
+
+.retangulo10 {
+  border: solid 2px #282828;
+  background-color: white;
+  margin: 5%;
+  width: 90%;
+  height: 50%;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+/* itens */
+.itens {
+  box-sizing: border-box;
+  margin: 10% 5%;
+  width: 90%;
+  height: 17%;
+  display: flex;
+  justify-content: space-between;
+}
+.additens {
+  margin: 0%;
+  box-sizing: border-box;
+  background-color: var(--color-rectangle-itens);
+  width: 40%;
+  height: 100%;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.removeitens {
+  margin: 0%;
+  box-sizing: border-box;
+  background-color: var(--color-rectangle-itens);
+  width: 40%;
+  height: 100%;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.svgimage {
+  width: 40%;
+  height: 40%;
+  box-sizing: border-box;
+}
+.par {
+  margin: 0%;
+  font-family: "Tiro Gurmukhi", serif;
+  font-size: 16px;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+/* fim itens */
+/* operacoes */
+
+.operacoes {
+  box-sizing: border-box;
+  height: 20%;
+  width: 100%;
+}
+
+.cc {
+  background-color: #a83f3f;
+  width: 230px;
+  height: 50px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: white;
+  gap: 5%;
+  border-radius: 10px;
+  color: white;
+}
+.buttoncc {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fc {
+  width: 230px;
+  height: 50px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: white;
+  gap: 5%;
+  border-radius: 10px;
+  color: white;
+  background-color: #6e9f4f;
+}
+
+.par2 {
+  margin: 0%;
+  font-family: "Tiro Gurmukhi", serif;
+  font-size: 18px;
+  color: white;
+}
+.ic {
+  width: 20%;
+  height: 60%;
+}
+/* fim operações */
+.buttonfc {
+  width: 230px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}

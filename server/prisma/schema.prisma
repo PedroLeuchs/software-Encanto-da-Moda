@@ -1,0 +1,61 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Cadastro_produto {
+  codigo_produto  Int               @id @default(autoincrement())
+  descricao       String
+  preco           Float
+  tamanho         String
+  cor             String
+  sexo            String
+  segmento        String
+  Itens_de_vendas Itens_de_vendas[]
+}
+
+model Cadastro_cliente {
+  id String @id @default(uuid())
+  nome_completo String
+  cpf           Int    @unique          
+  tel           Int
+  email         String
+  estado        String
+  cidade        String
+  bairro        String
+  rua           String
+  complemento   String
+  cep           Int
+  num_casa      Int
+  Vendas_balcao Vendas_balcao[]
+}
+
+model Vendas_balcao {
+  codigo_venda        String   @id @default(uuid())
+  createdData         DateTime @default(now())
+  total               Float
+   client_id String 
+  id             Cadastro_cliente  @relation(fields: [client_id], references: [id])
+  Itens_de_vendas Itens_de_vendas[]
+}
+
+model Itens_de_vendas {
+  codigo_item    Int    @id @default(autoincrement())
+  quantidade     Int
+  subtotal       Float
+  codigo_venda   String
+  codigo_produto Int
+
+  venda   Vendas_balcao    @relation(fields: [codigo_venda], references: [codigo_venda])
+  produto Cadastro_produto @relation(fields: [codigo_produto], references: [codigo_produto])
+}
+
+//para identificar chave primaria colocar um @
+//cadastro_cliente.create()

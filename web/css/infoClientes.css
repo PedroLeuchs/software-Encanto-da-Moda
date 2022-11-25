@@ -1,0 +1,263 @@
+.pmodal {
+  margin: 0;
+  font-size: 25px;
+  margin-left: 10px;
+}
+.pmodal2 {
+  margin: 0;
+  font-size: 20px;
+  margin-left: 10px;
+  color: #d9d9d9;
+}
+#modal {
+  width: 1104px;
+  height: 654px;
+
+  background-color: rgb(201, 194, 194);
+  border: black solid 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  border-radius: 10px;
+}
+.fechar {
+  width: 50px;
+  height: 50px;
+  background-color: #a83f3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.xis {
+  width: 40px;
+  transform: rotate(45deg);
+}
+
+/* infcliente */
+.nomecompleto {
+  width: 950px;
+  height: 80px;
+
+  display: flex;
+  flex-direction: column;
+  
+}
+.nomemodal {
+  width: 950px;
+  height: 50px;
+  color: white;
+  background-color: #2e2d32eb;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+.cpftelemail {
+  width: 950px;
+  height: 50px;
+
+  border-radius: 10px;
+}
+.cpftelemail {
+  width: 950px;
+  height: 80px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cpf {
+  width: 305px;
+  height: 80px;
+
+  display: flex;
+  flex-direction: column;
+}
+.tel {
+  width: 305px;
+  height: 80px;
+
+  display: flex;
+  flex-direction: column;
+}
+.email {
+  width: 305px;
+  height: 80px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.cpfmodal {
+  width: 305px;
+  height: 50px;
+  color: white;
+  background-color: #2e2d32eb;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+.telmodal {
+  width: 305px;
+  height: 50px;
+  color: white;
+  background-color: #2e2d32eb;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+.emailmodal {
+  width: 305px;
+  height: 50px;
+  color: white;
+  background-color: #2e2d32eb;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+.enderecomodal {
+  width: 950px;
+  height: 240px;
+
+  background-color: #2e2d32eb;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.denderecomodal1 {
+  width: 100%;
+  height: 50%;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.denderecomodal2 {
+  width: 100%;
+  height: 50%;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.input {
+  width: 280px;
+  height: 50px;
+  color: black;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+  padding-left: 10px;
+}
+.estadomodal {
+  width: 280px;
+  height: 75px;
+}
+.ruamodal {
+  width: 280px;
+  height: 75px;
+}
+.bairromodal {
+  width: 280px;
+  height: 75px;
+}
+.cidademodal {
+  width: 280px;
+  height: 75px;
+}
+.complementomodal {
+  width: 280px;
+  height: 75px;
+}
+.cepnumodal {
+  width: 280px;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cepmodal {
+  width: 180px;
+  height: 75px;
+}
+.numodal {
+  width: 70px;
+  height: 75px;
+}
+.inputcepmodal {
+  width: 180px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+  color: black;
+  padding-left: 10px;
+}
+.inputnmodal {
+  width: 70px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+  color: black;
+  padding-left: 10px;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.btns button {
+  font-size: medium;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.btnClose {
+  width: 200px;
+  height: 50px;
+  background-color: #a83f3f !important;
+  font-size: 26px !important;
+  margin-bottom: 5%;
+}
+.texto {
+  width: 950px;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.texto,
+p {
+  display: flex;
+  align-items: flex-end;
+}
+
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

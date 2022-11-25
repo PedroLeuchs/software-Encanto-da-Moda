@@ -1,0 +1,300 @@
+* {
+  font-family: "Tiro Gurmukhi", serif;
+  font-size: 30px;
+  box-sizing: border-box;
+}
+:root {
+  --color-rectangle-itens: #cb9b3e;
+  --color-save: #6e9f4f;
+}
+
+.espaco2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.part1tela2 {
+  width: 100%;
+  height: 40%;
+  display: flex;
+}
+.part2tela2 {
+  width: 100%;
+  height: 60%;
+  display: flex;
+}
+.informp1 {
+  height: 100%;
+  width: 100%;
+}
+
+.codigop {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1%;
+}
+
+.pi {
+  margin: 0%;
+  font-family: "Tiro Gurmukhi", serif;
+  font-size: 25px;
+  color: white;
+  margin-left: 2%;
+}
+
+.inputcp {
+  height: 40%;
+  width: 100%;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+
+.infp1 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.descricao {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+}
+.inputcp {
+  height: 40%;
+  width: 100%;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+.preco {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+}
+.inputds {
+  height: 40%;
+  width: 90%;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+.inputpr {
+  height: 40%;
+  width: 100%;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+
+/* fim informação parte 1 */
+
+.fotoprod {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fotoproduto {
+  background-color: #d9d9d9;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.informp2 {
+  height: 100%;
+  width: 35%;
+}
+.tamanho {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 3%;
+}
+.cor {
+  margin-left: 3%;
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sexo {
+  margin-left: 3%;
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.segmento {
+  margin-left: 3%;
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inputtmn {
+  height: 45%;
+  width: 90%;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+.inputcr {
+  height: 45%;
+  width: 90%;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+.inputsx {
+  height: 45%;
+  width: 90%;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+.inputseg {
+  height: 45%;
+  width: 90%;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+
+/*fim informação parte 2 */
+.operacoes {
+  border: solid 2px white;
+  height: 80%;
+  width: 65%;
+  display: flex;
+  background-color: #d9d9d9;
+  margin: 3%;
+  border-radius: 10px;
+}
+
+/* itens */
+.addiremove {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8%;
+}
+.additens {
+  margin: 0%;
+  box-sizing: border-box;
+  background-color: var(--color-rectangle-itens);
+  width: 40%;
+  height: 90%;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.removeitens {
+  box-sizing: border-box;
+  background-color: var(--color-rectangle-itens);
+  width: 40%;
+  height: 90%;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.par {
+  font-family: "Tiro Gurmukhi", serif;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
+}
+
+/* fim itens */
+
+.svgimage {
+  height: 50px;
+  width: 50px;
+}
+.retanguloop {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.resto {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.salvar {
+  width: 85%;
+  height: 45%;
+  background-color: #6e9f4f;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 5%;
+}
+.redorsalvar {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lista {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listainput {
+  width: 60%;
+  height: 80%;
+  background-color: #2e2c32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  cursor: pointer;
+  box-shadow: 5px 3px rgba(0, 0, 0, 0.39);
+  border: none;
+}
+button:active {
+  /* margin-top: 2px;
+  margin-left: 2px; */
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  color: #cfcfcf;
+  box-shadow: -4px -2px rgba(0, 0, 0, 0.39);
+}
+button:hover {
+  filter: brightness(0.9);
+}

@@ -1,0 +1,122 @@
+* {
+  font-family: "Tiro Gurmukhi", serif;
+  font-size: 30px;
+}
+body {
+  margin: 0;
+  /* width: 1366px;
+    height: 768px;
+    overflow: hidden; */
+
+  width: 100vw;
+  height: 100vh;
+}
+.conteiner {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(46, 45, 50, 0.92);
+  justify-content: center;
+} /*fim conteiner*/
+/* espaço1 */
+.retangle1 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  width: 20%;
+  height: 100vh;
+
+  background: #d9d9d9;
+  border-right: 2px solid #2e2c31;
+} /*fim retangulo*/
+/* espaço2 */
+.espaco2 {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  width: 94%;
+  /* height: 310px; */
+  left: 50%;
+  top: 0px;
+  margin-left: 8px;
+  border-radius: 20px;
+} /* fim da logo */
+a {
+  text-decoration: none;
+}
+.grupo1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 8px;
+  width: 94%;
+  height: 190px;
+  left: 50%;
+  top: 50%;
+} /* fim do grupo */
+
+.retangle2 {
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 20%;
+
+  background: #a2a2a2;
+  border: 2px solid #2e2c32;
+  border-radius: 10px;
+} /*fim retangulo2*/
+
+.retangle3 {
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 20%;
+  top: 25%;
+
+  background: #a2a2a2;
+  border: 2px solid #2e2c32;
+  border-radius: 10px;
+} /*fim retangulo3*/
+
+.retangle4 {
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 20%;
+  top: 50%;
+
+  background: #a2a2a2;
+  border: 2px solid #2e2c32;
+  border-radius: 10px;
+} /*fim retangulo4*/
+
+.p1 {
+  left: 3%;
+  font-family: "Tiro Gurmukhi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 90%;
+  line-height: 38px;
+
+  color: #282828;
+}
+.operacoes {
+  left: 40%;
+  top: 50%;
+}
+
+/* assets */
+.assets {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 37px;
+  left: 50px;
+  top: 90%;
+}

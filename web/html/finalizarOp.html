@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="../css/modal.css">
+  <link rel="stylesheet" href="../css/finalizarOp.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="modalOp">
+    <div class="top">
+
+      <p>
+        Finalizar Operação
+      </p>
+      <button class="fechar">
+        <img src="../assets/plus.svg" onclick="closeModal()" alt="" class="xis" />
+      </button>
+    </div>
+
+    <div class="finalizarCompra">
+      <div class="OpParte1">
+        <p style="color: white;margin: 0px; margin-left: 20px;">Produtos:</p>
+        <div class="listaprodutosOP"></div>
+      </div>
+      <div class="OpParte2">
+        <div class="valor">
+          <div class="totalVendaOp">
+
+            <div class="inputsOp">
+              <p style="color: white; margin-right: 5px;;">Total da venda:</p><input type="text" class="inputOp">
+            </div>
+            <div class="inputsOp">
+              <p style="color: white; margin-right: 5px;;">Total da venda:</p><input type="text" class="inputOp">
+            </div>
+            <div class="inputsOp">
+              <p style="color: white; margin-right: 5px;;">Total da venda:</p><input type="text" class="inputOp">
+            </div>
+
+
+          </div>
+          <div class="metodosPag">
+            <button class="vista">A vista</button>
+            <button class="prazo">A prazo</button>
+          </div>
+          <div class="ValorPag"></div>
+          <div class="troco"></div>
+
+        </div>
+        <div class="metodoPag"></div>
+      </div>
+      <div class="OpParte3">
+        <p style="color: white;margin: 0px; margin-left: 20px;">Modo de pagamento </p>
+        <div class="imagensOp">
+
+<div class="monpix">
+  <div class="dinheiro">
+    <p>Dinheiro</p>
+    <button class="money"><img width="55px" src="../assets/fc.svg" alt="" srcset=""></button>
+  </div>
+  
+  
+  <div class="dinheiro">
+<p>Pix</p>
+    <button class="money"><img src="../assets/pix.svg" alt=""></button></div>
+  </div>
+<div class="cartoes">
+  <div class="credito">
+
+    <p>Credito</p>
+    <button class="modopagbutton">
+      <img src="../assets/credito.svg" class="cartao" alt="" srcset="">
+    </button>
+  </div>
+  <div class="debito">
+<p>Debito</p>
+    <button class="modopagbutton">
+      
+      <img src="../assets/debito.svg" class="cartao" alt="" srcset="">
+    </button>
+  </div>
+
+</div>
+
+        </div>
+        <button class="prazo">Marcar</button>
+      </div>
+    </div>
+    <div class="buttonfc">
+      <button class="fc">
+        <p class="par2">Finalizar</p>
+      </button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,264 @@
+* {
+  font-family: "Tiro Gurmukhi", serif;
+  font-size: 30px;
+  box-sizing: border-box;
+  border: none;
+  margin: none;
+  overflow: hidden;
+}
+:root {
+  --primary-color: #d9d9d9;
+  --second-color: #2e2d32eb;
+}
+button{
+  cursor: pointer;
+  box-shadow: 5px 3px rgba(0, 0, 0, 0.39);
+  border: none;
+}
+button:active {
+  margin-top: 2px;
+  margin-left: 2px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  color: #cfcfcf;
+}
+button:hover {
+  filter: brightness(0.9);
+}
+.pi {
+  color: white;
+  font-family: "Tiro Gurmukhi";
+  font-size: 25px;
+  margin: 0 0 0 2%;
+}
+.espaco2 {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  justify-content: flex-start;
+}
+
+.parte1 {
+  display: flex;
+
+  height: 40%;
+  width: 100%;
+}
+.infoCliente {
+  height: 100%;
+  width: 100%;
+}
+.nomec {
+  width: 100%;
+  height: 50%;
+  padding: 1%;
+}
+.moreinformation {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.cpf {
+  width: 50%;
+  height: 50%;
+  padding: 1%;
+}
+.telefone {
+  width: 50%;
+  height: 50%;
+  padding: 1%;
+}
+.quadradoinfocliente {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 45%;
+  border-radius: 10px;
+}
+.fotoCnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 27%;
+  height: 100%;
+}
+.foto {
+  background-color: var(--primary-color);
+  width: 80%;
+  height: 80%;
+}
+
+.parte2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 60%;
+  width: 100%;
+}
+.quadrado {
+  background-color: #d9d9d9;
+  width: 98%;
+  height: 80%;
+  padding: 0 1rem;
+  border-radius: 10px;
+  margin-left: 0.8%;
+  display: flex;
+}
+.endereco1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.endereco2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.pe {
+  color: var(--second-color);
+  font-family: "Tiro Gurmukhi";
+  font-size: 25px;
+  margin: 0 0 0 5%;
+}
+.quadradoinfocliente2 {
+  background-color: var(--second-color);
+  width: 80%;
+  height: 50%;
+  border-radius: 10px;
+  margin-left: 3%;
+  color: white;
+}
+.estado {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+}
+.cidade {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+}
+.bairro {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+}
+.quadradoinfocliente3 {
+  background-color: var(--second-color);
+  width: 80%;
+  height: 50%;
+  border-radius: 10px;
+  margin-left: 3%;
+  color: white;
+}
+.rua {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.complemento {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cepn {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  gap: 1rem;
+}
+.quadradoinfocliente4 {
+  background-color: var(--second-color);
+  width: 220px;
+  height: 50%;
+  border-radius: 10px;
+  margin-left: 3%;
+  color: white;
+}
+.cep {
+  width: 100%;
+  display: grid;
+  gap: 0;
+  grid-template: 1fr 2fr;
+}
+.cep .pe {
+  grid-area: 1/1/2/2;
+  width: 100%;
+  margin-left: 10%;
+  display: flex;
+  align-items: flex-end;
+}
+.cep .quadradoinfocliente4 {
+
+  grid-area: 2/1/5/2;
+  height: 50px;
+  margin-left: 5%;
+  border-radius: 10px;
+}
+.n {
+  display: grid;
+  grid-template: 1fr 2fr;
+  width: 100%;
+}
+.n .pe {
+  width: 100%;
+  grid-area: 1/1/2/2;
+  margin-left: 10%;
+  display: flex;
+  align-items: flex-end;
+}
+.n .quadradoinfocliente4 {
+  grid-area: 2/1/5/2;
+  width: 60%;
+  height: 50px;
+}
+.s {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.quadradoinfocliente5 {
+  width: 80%;
+  height: 40%;
+  border-radius: 10px;
+  margin-left: 3%;
+}
+.salvar {
+  width: 98%;
+  height: 100%;
+  background-color: #6e9f4f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.redorsalvar {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
