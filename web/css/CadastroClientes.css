@@ -10,7 +10,7 @@
   --primary-color: #d9d9d9;
   --second-color: #2e2d32eb;
 }
-button{
+button {
   cursor: pointer;
   box-shadow: 5px 3px rgba(0, 0, 0, 0.39);
   border: none;
@@ -60,12 +60,17 @@ button:hover {
   height: 100%;
 }
 .cpf {
-  width: 50%;
+  width: 33%;
   height: 50%;
   padding: 1%;
 }
 .telefone {
-  width: 50%;
+  width: 33%;
+  height: 50%;
+  padding: 1%;
+}
+.email {
+  width: 33%;
   height: 50%;
   padding: 1%;
 }
@@ -209,7 +214,6 @@ button:hover {
   align-items: flex-end;
 }
 .cep .quadradoinfocliente4 {
-
   grid-area: 2/1/5/2;
   height: 50px;
   margin-left: 5%;

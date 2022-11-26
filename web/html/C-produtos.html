@@ -70,53 +70,56 @@
       <!--fim retangulo-->
 
       <div class="espaco2">
-        <div class="part1tela2">
-          <div class="informp1">
-            <div class="codigop">
-              <p class="pi">Código produto:</p>
-              <input type="text" class="inputcp" />
+        <form action="" class="cadastrarProduto" method="post">
+
+          <div class="part1tela2">
+            <div class="informp1">
+              <div class="codigop">
+                <p class="pi">Código produto:</p>
+                <input id="codigo_produto" type="number" class="inputcp" />
             </div>
 
             <div class="infp1">
               <div class="descricao">
                 <p class="pi">Descrição:</p>
-                <input type="text" class="inputds" />
+                <input id="descricao" type="text" class="inputds" />
               </div>
-
+              
               <div class="preco">
                 <p class="pi">Preço:</p>
-                <input type="text" class="inputpr" />
+                <input id="preco" type="text" class="inputpr" />
               </div>
             </div>
           </div>
           <!-- fim informação parte 1 -->
-
+          
           <!-- fim foto produto -->
         </div>
         <!-- fim parte 1 tela 2 -->
-
+        
         <div class="part2tela2">
           <div class="informp2">
             <!--informações parte 2-->
             <div class="tamanho">
               <p class="pi">Tamanho:</p>
-              <input type="text" class="inputtmn" />
+              <input id="tamanho" type="text" class="inputtmn" />
             </div>
             <div class="cor">
               <p class="pi">Cor:</p>
-              <input type="text" class="inputcr" />
+              <input id="cor" type="text" class="inputcr" />
             </div>
             <div class="sexo">
               <p class="pi">Sexo:</p>
-              <input type="text" class="inputsx" />
+              <input id="sexo" type="text" class="inputsx" />
             </div>
             <div class="segmento">
               <p class="pi">Segmento:</p>
-              <input type="text" class="inputseg" />
+              <input id="segmento" type="text" class="inputseg" />
             </div>
           </div>
+        </form>
           <!-- fim informação parte 2 -->
-
+          
           <div class="operacoes">
             <div class="retanguloop">
               <div class="resto">
@@ -128,7 +131,7 @@
                     </p>
                     <img src="../assets/plus.svg" alt="" class="svgimage" />
                   </button>
-
+                  
                   <button class="removeitens">
                     <p class="par">
                       remover <br />
@@ -139,13 +142,13 @@
                 </div>
               </div>
               <div class="redorsalvar">
-                <button class="salvar">
+                <button class="salvar" type="submit">
                   <p class="pi">salvar</p>
                   <img
-                    style="width: 50px; height: 50px"
-                    src="../assets/disquete.svg"
-                    alt=""
-                    class="svg"
+                  style="width: 50px; height: 50px"
+                  src="../assets/disquete.svg"
+                  alt=""
+                  class="svg"
                   />
                 </button>
               </div>

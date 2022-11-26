@@ -34,7 +34,7 @@ app.get("/produtos/:id/", async (request, response) => {
 app.get("/clientes/:id/", async (request, response) => {
   const id = request.params.id;
 
-  const cliente = await prisma.cadastro_cliente.findUnique({
+  const cliente: any = await prisma.cadastro_cliente.findUnique({
     select: {
       bairro: true,
       cep: true,
@@ -62,6 +62,14 @@ app.post("/clientes", async (request, response) => {
     data,
   });
   return response.json(cliente);
+});
+app.post("/produtos", async (request, response) => {
+  const data = request.body;
+  console.log(request.body);
+  const produto = await prisma.cadastro_produto.create({
+    data,
+  });
+  return response.json(produto);
 });
 
 // select codigo_produto, descricao from cadastro_produto where codigo_produto = produtoParametroId

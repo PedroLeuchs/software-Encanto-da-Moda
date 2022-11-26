@@ -49,7 +49,6 @@ const btnSearch2 = document.querySelector(".search2");
 btnSearch2.addEventListener("click", () => {
   (async () => {
     let cpfCliente = document.querySelector("#inputcpfCliente").value;
-
     if (cpfCliente.length) {
       let cliente = await getCliente(cpfCliente);
       if (!cliente) {
@@ -81,4 +80,4 @@ async function getCliente(cpfCliente) {
     .then((data) => data);
 }
 
-// cadastro cliente
+app.listen(3333);

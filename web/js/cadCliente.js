@@ -14,21 +14,22 @@ formCadCliente.addEventListener("submit", (event) => {
   event.preventDefault();
 
   var newObj = {
-    cpf: Number(cpf.value),
-    tel: Number(tel.value),
+    cpf: String(cpf.value.toString()),
+    tel: String(tel.value.toString()),
     nome_completo: String(nome_completo.value),
     estado: String(estado.value),
     cidade: String(cidade.value),
     bairro: String(bairro.value),
     rua: String(rua.value),
     complemento: String(complemento.value),
-    cep: Number(cep.value),
-    num_casa: Number(num_casa.value),
+    cep: String(cep.value.toString()),
+    num_casa: String(num_casa.value.toString()),
+    email: String(email.value),
   };
 
   console.log(newObj);
 
-  fetch("http://localhost:3333/clientes/", {
+  fetch("http://localhost:3333/clientes", {
     method: "POST",
     body: JSON.stringify(newObj),
     headers: {
