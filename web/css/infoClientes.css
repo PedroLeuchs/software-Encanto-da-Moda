@@ -19,7 +19,7 @@ hr {
   border-top: 1px solid lightgray;
 }
 
-.modal-container {
+.modal-containerClientes {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -110,8 +110,8 @@ span {
   color: #d9d9d9;
 }
 #modal {
-  width: 1104px;
-  height: 654px;
+  width: 80%;
+  height: 95%;
 
   background-color: rgb(201, 194, 194);
   border: black solid 2px;
@@ -364,8 +364,8 @@ p {
   padding: 0;
 }
 .modal-container2 {
-  width: 80vw;
-  height: 90vh;
+  width: 70%;
+  height: 90%;
   display: none;
   z-index: 999;
   position: fixed;
@@ -434,7 +434,7 @@ p {
   align-items: center;
   margin-left: 10px;
 }
-.descricao {
+.descricaoCliente {
   width: 360px;
   height: 60px;
   display: column;

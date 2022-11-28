@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/styleDadosTable.css" />
     <link rel="stylesheet" href="../css/infoClientes.css" />
+    <link rel="stylesheet" href="../css/styleDadosTable.css" />
 
     <title>Document</title>
   </head>
@@ -19,7 +19,7 @@
             <button class="fechar">
               <img
                 src="../assets/plus.svg"
-                onclick="closeModal2()"
+                onclick="closeModal('modal-container2')"
                 alt=""
                 class="xis"
               />
@@ -31,7 +31,7 @@
               <input class="inputMP2" type="text" />
             </div>
             <div class="linhaC2">
-              <div class="descricao">
+              <div class="descricaoCliente">
                 <p>Nome Produto</p>
                 <input class="inputMP" type="text" />
               </div>
@@ -61,12 +61,20 @@
               </div>
             </div>
           </div>
-          <div class="btns">
-            <button class="btnClose" onclick="closeModal2()">Sair</button>
+          <div class="btnsAcessarDados">
+            <button
+              class="btnCloseAcessDados"
+              onclick="closeModal('modal-container2')"
+            >
+              Cancelar
+            </button>
+            <button class="btnSalvarAcessDados" onclick="">
+              Salvar Alterações
+            </button>
           </div>
         </div>
       </div>
-      <div id="modal-container" class="modal-container">
+      <div id="modal-container" class="modal-containerClientes">
         <div id="modal">
           <div class="texto">
             <h2>Informações Cliente</h2>
@@ -74,7 +82,7 @@
             <button class="fechar">
               <img
                 src="../assets/plus.svg"
-                onclick="closeModal()"
+                onclick="closeModal('modal-container')"
                 alt=""
                 class="xis"
               />
@@ -141,8 +149,16 @@
               </div>
             </div>
           </div>
-          <div class="btns">
-            <button class="btnClose" onclick="closeModal()">Sair</button>
+          <div class="btnsAcessarDados">
+            <button
+              class="btnCloseAcessDados"
+              onclick="closeModal('modal-container')"
+            >
+              Cancelar
+            </button>
+            <button class="btnSalvarAcessDados" onclick="">
+              Salvar Alterações
+            </button>
           </div>
         </div>
       </div>
@@ -167,15 +183,12 @@
             Histórico
           </button>
         </div>
-        <button class="goOut">
-          <img src="../assets/goOut.svg" alt="" />
-        </button>
+        <a href="../html/index.html"
+          ><button class="goOut">
+            <img src="../assets/goOut.svg" alt="" /></button
+        ></a>
         <div class="rmvEdit">
-          <button
-            onclick="getModal(),getModal2(),getModal3()"
-            id="openModal"
-            class="operationsTable"
-          >
+          <button onclick="getModal()" id="openModal" class="operationsTable">
             <img src="../assets/edit.svg" alt="" />
           </button>
           <button class="operationsTable">

@@ -10,21 +10,19 @@
 // const num_casa = document.querySelector("#num_casa");
 
 const formCadProduto = document.querySelector("form");
-const codigo_produto = document.querySelector("#codigo_produto");
 const descricao = document.querySelector("#descricao");
 const preco = document.querySelector("#preco");
 const tamanho = document.querySelector("#tamanho");
 const cor = document.querySelector("#cor");
 const sexo = document.querySelector("#sexo");
-const segmento = document.querySelect("#segmento");
+const segmento = document.querySelector("#segmento");
 
 formCadProduto.addEventListener("submit", (event) => {
   event.preventDefault();
 
   var newObj = {
-    codigo_produto: Number(cpf.value),
     descricao: String(descricao.value),
-    preco: Float(preco.value),
+    preco: Number(preco.value),
     tamanho: String(tamanho.value),
     cor: String(cor.value),
     sexo: String(sexo.value),
@@ -33,7 +31,7 @@ formCadProduto.addEventListener("submit", (event) => {
 
   console.log(newObj);
 
-  fetch("http://localhost:3333/produtos/", {
+  fetch("http://localhost:3333/produtos", {
     method: "POST",
     body: JSON.stringify(newObj),
     headers: {

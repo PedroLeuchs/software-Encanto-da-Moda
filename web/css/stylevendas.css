@@ -9,8 +9,7 @@ button {
   border: none;
 }
 button:active {
-  margin-top: 2px;
-  margin-left: 2px;
+  transform: translateY(-10px);
   border-top: 2px solid black;
   border-left: 2px solid black;
   color: #cfcfcf;
@@ -68,6 +67,7 @@ button:hover {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .button {
   width: 30%;
@@ -78,8 +78,7 @@ button:hover {
   width: 50px;
   height: 50px;
 
-  margin-top: 16%;
-  margin-left: 5%;
+  margin-top: 23px;
   gap: 5%;
 
   display: flex;
@@ -103,7 +102,7 @@ button:hover {
   color: white;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 .search2 {
@@ -202,22 +201,24 @@ button:hover {
 
 .descricao2 {
   display: flex;
-  justify-content: space-between;
-  height: 70%;
+  justify-content: center;
+  height: 80%;
   width: 100%;
+  align-items: center;
 }
 
 .descricao {
   width: 100%;
-  height: 90%;
-
+  height: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  margin: 3%;
+  margin-top: 20px;
 }
 .produto {
-  width: 100%;
-  height: 80px;
+  width: 97%;
+  height: 24%;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -225,66 +226,74 @@ button:hover {
 }
 .resto {
   display: flex;
-  justify-content: space-between;
   width: 100%;
   height: 50%;
-  margin-left: 3%;
+  margin-top: 20px;
+  align-items: center;
 }
 .resto2 {
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 50%;
-  margin-left: 3%;
+  margin-bottom: 20px;
 }
 .tamanho {
   width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 3%;
 }
 .cor {
   width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 3%;
 }
 .sexo {
   width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 3%;
 }
 .segmento {
   width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 3%;
 }
 
 .retangulos {
   background-color: #282828;
   width: 90%;
   height: 33%;
-  border-radius: 5px;
+  border-radius: 10px;
   color: white;
 }
 .inputretangulop {
   background-color: #282828;
   width: 95%;
   height: 66%;
-  border-radius: 5px;
+  border-radius: 10px;
   color: white;
 }
 
 .preco {
   width: 95%;
   height: 20%;
-  margin-top: 5%;
+  margin-bottom: 5%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -305,15 +314,19 @@ button:hover {
   box-sizing: border-box;
 
   height: 100vh;
-  width: 30%;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.2rem 0.4rem;
   background-color: #d9d9d9;
 }
 
 .retangulo10 {
   border: solid 2px #282828;
   background-color: white;
-  margin: 5%;
-  width: 90%;
+  width: 100%;
   height: 50%;
   box-sizing: border-box;
   border-radius: 10px;
@@ -321,13 +334,14 @@ button:hover {
 /* itens */
 .itens {
   box-sizing: border-box;
-  margin: 10% 5%;
-  width: 90%;
+  width: 100%;
   height: 17%;
   display: flex;
   justify-content: space-between;
 }
-.additens {
+
+.handleItems {
+  padding: 0 1rem;
   margin: 0%;
   box-sizing: border-box;
   background-color: var(--color-rectangle-itens);
@@ -342,23 +356,9 @@ button:hover {
   border: none;
 }
 
-.removeitens {
-  margin: 0%;
-  box-sizing: border-box;
-  background-color: var(--color-rectangle-itens);
-  width: 40%;
-  height: 100%;
-  border-radius: 10px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: none;
-}
 .svgimage {
-  width: 40%;
-  height: 40%;
+  width: 30px;
+  height: 30px;
   box-sizing: border-box;
 }
 .par {
@@ -379,40 +379,23 @@ button:hover {
   width: 100%;
 }
 
-.cc {
-  background-color: #a83f3f;
-  width: 230px;
-  height: 50px;
-
+.operacoes button {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 5px;
+  width: 100%;
+  height: 2rem;
   border: white;
-  gap: 5%;
   border-radius: 10px;
   color: white;
 }
-.buttoncc {
-  height: 50%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.cc {
+  background-color: #a83f3f;
 }
 
 .fc {
-  width: 230px;
-  height: 50px;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border: white;
-  gap: 5%;
-  border-radius: 10px;
-  color: white;
   background-color: #6e9f4f;
 }
 
@@ -423,15 +406,24 @@ button:hover {
   color: white;
 }
 .ic {
-  width: 20%;
-  height: 60%;
+  width: 30px;
+  height: 30px;
 }
 /* fim operações */
 .buttonfc {
-  width: 230px;
-  height: 50px;
+  height: 50%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 30px;
+}
+.buttoncc {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.active {
+  display: flex;
 }

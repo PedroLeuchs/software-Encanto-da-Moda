@@ -79,5 +79,3 @@ async function getCliente(cpfCliente) {
     .then((response) => response.json())
     .then((data) => data);
 }
-
-app.listen(3333);

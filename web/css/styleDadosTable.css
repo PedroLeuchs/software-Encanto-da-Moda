@@ -48,6 +48,11 @@ button:hover {
   justify-content: space-around;
   flex-direction: column;
 }
+
+button {
+  background-color: #2d2c30;
+}
+
 .consultarProd {
   width: 200px;
   height: 50px;
@@ -148,6 +153,52 @@ td {
   overflow: scroll;
   overflow-x: hidden;
 }
+.modal-containerClientes {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: none;
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+}
+
+.ativo {
+  display: flex;
+}
+
+.btnAtivo {
+  background-color: #6f6c72;
+}
+
 .campos {
   font-weight: bold;
+}
+.btnCloseAcessDados {
+  width: 200px;
+  height: 50px;
+  background-color: #a83f3f !important;
+  margin: 0;
+}
+.btnSalvarAcessDados {
+  width: 200px;
+  height: 50px;
+  background-color: #52773b !important;
+}
+.btnsAcessarDados {
+  width: 80%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.btnsAcessarDados button {
+  font-size: medium;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
 }

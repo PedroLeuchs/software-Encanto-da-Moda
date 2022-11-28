@@ -31,8 +31,8 @@ app.get("/produtos/:id/", async (request, response) => {
   return response.json(produto);
 });
 
-app.get("/clientes/:id/", async (request, response) => {
-  const id = request.params.id;
+app.get("/clientes/:cpf/", async (request, response) => {
+  const cpf = request.params.cpf;
 
   const cliente: any = await prisma.cadastro_cliente.findUnique({
     select: {
@@ -49,7 +49,7 @@ app.get("/clientes/:id/", async (request, response) => {
       tel: true,
     },
     where: {
-      id,
+      cpf,
     },
   });
   return response.json(cliente);
@@ -63,6 +63,7 @@ app.post("/clientes", async (request, response) => {
   });
   return response.json(cliente);
 });
+
 app.post("/produtos", async (request, response) => {
   const data = request.body;
   console.log(request.body);
