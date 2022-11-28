@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styleDadosTable.css" />
+    <link rel="stylesheet" href="../css/infoClientes.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="modal-container2" class="modal-container2">
+        <div class="modal2">
+          <div class="texto2">
+            <h2>Informações Produto</h2>
+
+            <button class="fechar">
+              <img
+                src="../assets/plus.svg"
+                onclick="closeModal2()"
+                alt=""
+                class="xis"
+              />
+            </button>
+          </div>
+          <div class="inputsMP">
+            <div class="codigoProd">
+              <p>Codigo Produto</p>
+              <input class="inputMP2" type="text" />
+            </div>
+            <div class="linhaC2">
+              <div class="descricao">
+                <p>Nome Produto</p>
+                <input class="inputMP" type="text" />
+              </div>
+              <div class="preco">
+                <p>Preço</p>
+                <input class="inputMP" type="text" />
+              </div>
+            </div>
+            <div class="linhaC2">
+              <div class="tamanho">
+                <p>Tamanho</p>
+                <input class="inputMP" type="text" />
+              </div>
+              <div class="corProd">
+                <p>Cor</p>
+                <input class="inputMP" type="text" />
+              </div>
+            </div>
+            <div class="linhaC2">
+              <div class="sexo">
+                <p>Sexo</p>
+                <input class="inputMP" type="text" />
+              </div>
+              <div class="segmento">
+                <p>Segmento</p>
+                <input class="inputMP" type="text" />
+              </div>
+            </div>
+          </div>
+          <div class="btns">
+            <button class="btnClose" onclick="closeModal2()">Sair</button>
+          </div>
+        </div>
+      </div>
+      <div id="modal-container" class="modal-container">
+        <div id="modal">
+          <div class="texto">
+            <h2>Informações Cliente</h2>
+
+            <button class="fechar">
+              <img
+                src="../assets/plus.svg"
+                onclick="closeModal()"
+                alt=""
+                class="xis"
+              />
+            </button>
+          </div>
+          <div class="nomecompleto">
+            <p class="pmodal">Nome completo:</p>
+            <input type="text" id="inputNomeCliente" class="nomemodal" />
+          </div>
+          <div class="cpftelemail">
+            <div class="cpf">
+              <p class="pmodal">CPF:</p>
+              <input type="text" id="inputCpfCliente" class="cpfmodal" />
+            </div>
+            <div class="tel">
+              <p class="pmodal">Telefone:</p>
+              <input type="text" id="inputTelCliente" class="telmodal" />
+            </div>
+            <div class="email">
+              <p class="pmodal">Email:</p>
+              <input type="text" id="inputEmailCliente" class="emailmodal" />
+            </div>
+          </div>
+          <div class="texto">
+            <p class="pmodal">Endereço:</p>
+          </div>
+          <div class="enderecomodal">
+            <div class="denderecomodal1">
+              <div class="estadomodal">
+                <p class="pmodal2">Estado:</p>
+                <input type="text" id="inputEstadoCliente" class="input" />
+              </div>
+              <div class="ruamodal">
+                <p class="pmodal2">Rua:</p>
+                <input type="text" id="inputRuaCliente" class="input" />
+              </div>
+              <div class="bairromodal">
+                <p class="pmodal2">Bairro:</p>
+                <input type="text" id="inputBairroCliente" class="input" />
+              </div>
+            </div>
+            <div class="denderecomodal2">
+              <div class="cidademodal">
+                <p class="pmodal2">Cidade:</p>
+                <input type="text" id="inputCidadeCliente" class="input" />
+              </div>
+              <div class="complementomodal">
+                <p class="pmodal2">Complemento:</p>
+                <input type="text" id="inputComplementoCliente" class="input" />
+              </div>
+              <div class="cepnumodal">
+                <div class="cepmodal">
+                  <p class="pmodal2">CEP:</p>
+                  <input
+                    type="text"
+                    id="inputCepCliente"
+                    class="inputcepmodal"
+                  />
+                </div>
+                <div class="numodal">
+                  <p class="pmodal2">Nº:</p>
+                  <input type="text" id="inputnumCliente" class="inputnmodal" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btns">
+            <button class="btnClose" onclick="closeModal()">Sair</button>
+          </div>
+        </div>
+      </div>
+      <div class="espacoConsultDados">
+        <img src="../assets/logoEMpart2.svg" alt="logo Encanto da Moda" />
+        <div class="operacoesConsultDados">
+          <button onclick="getTable()" id="action-btn" class="consultarProd">
+            Consultar Cliente
+          </button>
+          <button
+            onclick="getTable2()"
+            id="action-btn2"
+            class="consultarCliente"
+          >
+            Consultar Produto
+          </button>
+          <button
+            onclick="getTable3()"
+            id="action-btn3"
+            class="historicoVendas"
+          >
+            Histórico
+          </button>
+        </div>
+        <button class="goOut">
+          <img src="../assets/goOut.svg" alt="" />
+        </button>
+        <div class="rmvEdit">
+          <button
+            onclick="getModal(),getModal2(),getModal3()"
+            id="openModal"
+            class="operationsTable"
+          >
+            <img src="../assets/edit.svg" alt="" />
+          </button>
+          <button class="operationsTable">
+            <img src="../assets/trash.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="espacoTable">
+        <div id="table" class="table">
+          <table>
+            <tr class="campos">
+              <td><div align="center">Nome</div></td>
+              <td><div align="center">CPF</div></td>
+              <td><div align="center">Telefone</div></td>
+              <td><div align="center">Email</div></td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+          </table>
+        </div>
+        <div id="table2" class="table2">
+          <table>
+            <tr class="campos">
+              <td><div align="center">Codigo</div></td>
+              <td><div align="center">Nome</div></td>
+              <td><div align="center">Tamanho</div></td>
+              <td><div align="center">Preço</div></td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+          </table>
+        </div>
+        <div id="table3" class="table3">
+          <table>
+            <tr class="campos">
+              <td><div align="center">Codigo_Venda</div></td>
+              <td><div align="center">Nome_Cliente</div></td>
+              <td><div align="center">Valor</div></td>
+              <td><div align="center">Data</div></td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+            <tr class="dados">
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+              <td>teste</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/tabelas.js"></script>
+</html>
