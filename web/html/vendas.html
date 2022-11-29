@@ -23,7 +23,7 @@
   <body>
     <div class="modalOp">
       <div class="top">
-        <p>Finalizar Operação</p>
+        <h4>Finalizar Operação</h4>
         <button class="fechar">
           <img
             src="../assets/plus.svg"
@@ -35,104 +35,74 @@
       </div>
 
       <div class="finalizarCompra">
-        <div class="OpParte1">
-          <p style="color: white; margin: 0px; margin-left: 20px">Produtos:</p>
+        <div class="box">
+          <label class="title">Produtos:</label>
           <div class="listaprodutosOP"></div>
         </div>
-        <div class="OpParte2">
+        <div class="box">
           <div class="valor">
             <div class="totalVendaOp">
               <div class="inputsOp">
-                <p style="color: white; margin-right: 5px">Total da venda:</p>
+                <label class="title">Total da venda:</label>
                 <input type="text" class="inputOp" />
               </div>
               <div class="inputsOp">
-                <p style="color: white; margin-right: 5px">Valor pago:</p>
+                <label class="title">Valor ago:</label>
                 <input type="text" class="inputOp" />
               </div>
               <div class="inputsOp">
-                <p style="color: white; margin-right: 5px">Troco:</p>
+                <label class="title">Troco:</label>
                 <input type="text" class="inputOp" />
               </div>
-            </div>
-            <div class="metodosPag">
-              <button class="vista">A vista</button>
-              <button class="prazo">A prazo</button>
             </div>
             <div class="ValorPag"></div>
             <div class="troco"></div>
           </div>
           <div class="metodoPag"></div>
         </div>
-        <div class="OpParte3">
-          <p style="color: white; margin: 0px; margin-left: 20px">
-            Modo de pagamento
-          </p>
+        <div class="box">
+          <label class="title">
+            Modo de pagamento:
+          </label>
           <div class="imagensOp">
-            <div class="monpix">
-              <div class="radioGroup">
-                <div>
-                  <input type="radio" name="formPagamento" id="dinheiro" />
-                  <label for="dinheiro">Dinheiro</label>
-                </div>
-                <div>
-                  <input type="radio" name="formPagamento" id="pix" />
-                  <label for="pix">Pix</label>
-                </div>
-                <div>
-                  <input type="radio" name="formPagamento" id="debito" />
-                  <label for="debito">Débito</label>
-                </div>
-                <div>
-                  <input type="radio" name="formPagamento" id="credito" />
-                  <label for="credito">Crédito</label>
-                </div>
-
-                <!-- <button class="money">
-                  <img width="55px" src="../assets/fc.svg" alt="" srcset="" />
-                </button> -->
+            <div class="radioGroup">
+              <div>
+                <input type="radio" name="formPagamento" id="dinheiro" />
+                <label for="dinheiro">Dinheiro</label>
               </div>
-
-              <!-- <div class="dinheiro">
-                <p>Pix</p>
-                <button class="money">
-                  <img src="../assets/pix.svg" alt="" />
-                </button>
+              <div>
+                <input type="radio" name="formPagamento" id="pix" />
+                <label for="pix">Pix</label>
               </div>
-            </div>
-            <div class="cartoes">
-              <div class="credito">
-                <p>Credito</p>
-                <button class="modopagbutton">
-                  <img
-                    src="../assets/credito.svg"
-                    class="cartao"
-                    alt=""
-                    srcset=""
-                  />
-                </button>
+              <div>
+                <input type="radio" name="formPagamento" id="debito" />
+                <label for="debito">Débito</label>
               </div>
-              <div class="debito">
-                <p>Debito</p>
-                <button class="modopagbutton">
-                  <img
-                    src="../assets/debito.svg"
-                    class="cartao"
-                    alt=""
-                    srcset=""
-                  />
-                </button>
-              </div> -->
+              <div>
+                <input type="radio" name="formPagamento" id="credito" />
+                <label for="credito">Crédito</label>
+              </div>
+              <div>
+                <input type="radio" name="formPagamento" id="marcar" />
+                <label for="marcar">Marcar</label>
+              </div>
             </div>
           </div>
-          <button class="prazo">Marcar</button>
+          <section class="radioGroupPagamento">
+            <div>
+              <input type="radio" name="tipo" id="avista" />
+              <label for="avista">À vista</label>
+            </div>
+            <div>
+              <input type="radio" name="tipo" id="aprazo" />
+              <label for="aprazo">À prazo</label>
+            </div>
+          </section>
         </div>
       </div>
-      <div class="buttonfc">
-        <button class="finalizar">
-          <p class="par2">Finalizar</p>
-        </button>
-      </div>
+      <button class="finalizar">
+        <p class="par2">Finalizar</p>
+      </button>
     </div>
     <div class="conteiner">
       <!-- modal -->
@@ -366,7 +336,7 @@
           <!-- fim codigo -->
 
           <div class="informacoes">
-            <p class="pi">descrição:</p>
+            <p class="pi">Descrição:</p>
             <div class="tela3">
               <div class="descricao2">
                 <div class="descricao">
